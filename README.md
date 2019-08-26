@@ -4,10 +4,10 @@ The current solution is to get Cortex working with the ML model we found so far.
 
 * User purchased a product, a custom outcome triggered via code and the purchased product id is saved with the contact in xDB. This is done by creating contact and outcome using script.
 * The processing engine registered with Projection, Merge, Predict and Storage, 4 tasks
-** Projection task is to retrieve data from xDB (which is very easy as xDB support is Cortex's OOTB), create tabular datasource for next step.
-** We can use default merge task as Sitecore doc recommended.
-** In the Predict task, we use a trained ML model to predict product recommendations with each product id in datasource
-** In Storage task, we save the recommendation back to the contact's custom facet.
+ * Projection task is to retrieve data from xDB (which is very easy as xDB support is Cortex's OOTB), create tabular datasource for next step.
+ * We can use default merge task as Sitecore doc recommended.
+ * In the Predict task, we use a trained ML model to predict product recommendations with each product id in datasource
+ * In Storage task, we save the recommendation back to the contact's custom facet.
 * We display the recommendation on a webpage or in the application console.
 
 ## Deployment Instructions ##
@@ -44,10 +44,11 @@ The current solution is to get Cortex working with the ML model we found so far.
 
 ## Run the Demo ##
 
-* Run "SUGCON2019Cortex.DemoConsole", choose "0" to create new contact with purchased product id saved in the custom outcome.
-* Use PostMan to register Cortex tasks. POST: http://[YOUR HOST]/api/contactapi/RegisterTasks it returns task ID for each task(Projection, Merge, Predict, Storage).
-* Use PostMan to retrieve recommendations. GET: http://[YOUR HOST]/api/contactapi/Recommendtions it returns all the contacts with custom purchase outcome and shows the recommended products according to his purchased product.
-
+* Go to Https://[web host]/demopage.html
+* Use "Create Contact" button to create dummy contact with purchased product id in the custom purchase outcome.
+* Use "Register Task" button to register Cortex tasks(Projection, Merge, Predict, Storage).
+* Use contact ID with "Show Recommendation" button to retrieve recommendations for one specific contact.
+* Use "Show All Recommendations" sections to display all the recently created contact's product recommendations.
 
 ## Tips ##
 

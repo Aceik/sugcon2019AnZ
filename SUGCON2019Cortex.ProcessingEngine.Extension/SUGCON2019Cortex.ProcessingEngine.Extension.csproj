@@ -387,7 +387,6 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="app.config" />
-    <None Include="model.zip" />
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
