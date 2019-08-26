@@ -1,0 +1,68 @@
+﻿body {
+    align-content:center;
+}
+
+button{
+    padding:5px;
+    margin:5px;
+}
+
+div.result {
+    padding-left: 5px;
+    word-wrap: break-word;
+}
+
+div.box {
+    margin-left: 15px;
+    margin-bottom: 15px;
+}
+
+.jumbotron {
+    background-image: linear-gradient(45deg, lightblue, pink);
+}
+
+body.row{
+    margin:0;
+    padding:0;
+}
+
+.btn.btn-outline-secondary {
+    color:black !important;
+    padding:5px;
+    
+}
+.btn-outline-secondary:hover{
+    color:white !important;
+}
+
+.TaskRegister_div{
+    padding:5px;
+}
+
+.container {
+    padding-top: 5px;
+    padding-bottom: 5px;
+    width: fit-content;
+}
+h1{
+    font-size:3rem !important;
+    font-weight:bold !important;
+}
+
+img.aceik_logo {
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    margin: 1%;
+    width: 15%;
+    min-width: 110px;
+}
+
+img.sitecore_logo {
+    position: absolute;
+    min-width: 110px;
+    top: 0px;
+    left: 0px;
+    margin: 1%;
+    width: 15%;
+}

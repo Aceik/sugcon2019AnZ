@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Settings>
+  <Sitecore>
+    <XConnect.Client>
+      <Services>
+        <Client.Configuration>
+          <Options>
+            <Models>
+              <MovieModel>
+                <TypeName>SUGCON2019Cortex.XConnect.Extension.Model.ProductModel, SUGCON2019Cortex.XConnect.Extension</TypeName>
+                <PropertyName>Model</PropertyName>
+              </MovieModel>
+            </Models>
+          </Options>
+        </Client.Configuration>
+      </Services>
+    </XConnect.Client>
+  </Sitecore>
+</Settings>

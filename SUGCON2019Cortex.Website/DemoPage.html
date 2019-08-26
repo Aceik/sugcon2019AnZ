@@ -1,0 +1,144 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="DemoPageStyle.css" />
+    <link rel="stylesheet" href="Content/bootstrap.min.css" />
+    
+    <title>SUGCON DemoPage</title>
+</head>
+<body onload="readJson()">
+    <div class="jumbotron text-center" style="margin-bottom:0">
+        <img src="Media/Aceik Logo.png" class="aceik_logo img-responsive" />
+        <img src="Media/Sitecore-logo.png" class="sitecore_logo img-responsive" />
+        <h1>SUGCON Demonstration</h1>
+    </div>
+    <div class="container">
+        <div class="row">
+            <!--Create Contact-->
+            <div class="CreateContact_div container">
+                <h2>Create Contact</h2>
+                <button class="CreateContact_button btn btn-outline-secondary" onclick="CreateContact()">Create Contact</button>
+            </div>
+            <div id="CreateContactResultBox" class="col-md-4">
+            </div>
+        </div>
+
+        <div class="row">
+            <!--Task Register-->
+            <div class="TaskRegister_div container">
+                <h2>Task Registering</h2>
+                <button class="TaskReg_button btn btn-outline-secondary" onclick="RegisterTask()">Register Task</button>
+            </div>
+            <div id="TaskRegisterResultBox" class="box">
+                <div id="TaskRegisterResult" class="result"></div>
+            </div>
+        </div>
+
+        <div class="row">
+            <!--Recommendation single-->
+            <div class="ShowRecommendationSingle_div container">
+                <div class="panel panel-basic">
+
+                </div>
+                <h2>Show Specific Contact Recommendation</h2>
+                Contact ID: <input type="text" name="contactId" id="contactId" class="form-control" /><br />
+                <button class="ShowRecommendationSingle_button btn btn-outline-secondary" onclick="ShowRecommendation(document.getElementById('contactId').value)">Show Recommendation</button>
+            </div>
+            <div id="ShowRecommendationSingleResultBox" class="row">
+            </div>
+        </div>
+
+        <div class="row">
+            <!--Recommendation all-->
+            <div class="ShowRecommendation_div container">
+                <h2>Show All Recommendations</h2>
+                <button class="ShowRecommendation_button btn btn-outline-secondary" onclick="ShowRecommendations()">Show Recommendation</button>
+            </div>
+            <div id="ShowRecommendationResultBox" class="row">
+            </div>
+        </div>
+    </div>
+
+    <script id="CreateContactResult" type="x-tmpl-mustache">
+        <div class="card">
+            <img class="bd-placeholder-img card-img-top" src="/-/media/Images/Habitat/{{PurchasedProductId}}_01.jpg?h=220&w=263" />
+            <div class="card-body">
+                <p class="card-text">
+                    First Name: {{FirstName}}<br />
+                    Last Name: {{LastName}}</br/>
+                    Product Name:
+                    {{#getProductName}}{{PurchasedProductId}}{{/getProductName}}
+                </p>
+            </div>
+        </div>
+    </script>
+
+    <script id="ShowRecommendationSingleResult" type="x-tmpl-mustache">
+        <div class="col-md-4">
+            <div class="card">
+                <img class="bd-placeholder-img card-img-top" src="/-/media/Images/Habitat/{{PurchasedProductId}}_01.jpg?h=220&w=263" />
+                <div class="card-body">
+                    <p class="card-text">
+                        First Name: {{FirstName}}<br />
+                        Last Name: {{LastName}}</br/>
+                        Product Name:
+                        {{#getProductName}}{{PurchasedProductId}}{{/getProductName}}
+                    </p>
+                </div>
+            </div>
+        </div>
+        {{#Recommends}}
+        <div class="col-md-4">
+            <div class="card">
+                <img class="bd-placeholder-img card-img-top" src="/-/media/Images/Habitat/{{ProductId}}_01.jpg?h=220&w=263" />
+                <div class="card-body">
+                    <p class="card-text">
+                        Score: {{Score}}<br />
+                        Product Name:
+                        {{#getProductName}}{{ProductId}}{{/getProductName}}
+                    </p>
+                </div>
+            </div>
+        </div>
+        {{/Recommends}}
+    </script>
+
+    <script id="ShowRecommendationResult" type="x-tmpl-mustache">
+        {{#data}}
+            <div class="col-md-4">
+                <div class="card">
+                    <img class="bd-placeholder-img card-img-top" src="/-/media/Images/Habitat/{{PurchasedProductId}}_01.jpg?h=220&w=263" />
+                    <div class="card-body">
+                        <p class="card-text">
+                            First Name: {{FirstName}}<br />
+                            Last Name: {{LastName}}</br/>
+                            Product Name:
+                            {{#getProductName}}{{PurchasedProductId}}{{/getProductName}}
+                        </p>
+                    </div>
+                </div>
+            </div>
+            {{#Recommends}}
+            <div class="col-md-4">
+                <div class="card">
+                    <img class="bd-placeholder-img card-img-top" src="/-/media/Images/Habitat/{{ProductId}}_01.jpg?h=220&w=263" />
+                    <div class="card-body">
+                        <p class="card-text">
+                            Score: {{Score}}<br />
+                            Product Name:
+                            {{#getProductName}}{{ProductId}}{{/getProductName}}
+                        </p>
+                    </div>
+                </div>
+            </div>
+            {{/Recommends}}
+        {{/data}}
+    </script>
+
+    <script src="Scripts/jquery-3.4.1.min.js"></script>
+    <script src="Scripts/mustache.min.js"></script>
+
+    <script type="text/javascript" src="DemoPage.js"></script>
+</body>
+</html>

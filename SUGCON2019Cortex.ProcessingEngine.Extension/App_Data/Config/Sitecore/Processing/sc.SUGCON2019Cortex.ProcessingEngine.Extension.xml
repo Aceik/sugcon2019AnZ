@@ -1,0 +1,30 @@
+﻿<Settings>
+  <Sitecore>
+    <Processing>
+      <Services>
+        <ProductRecommendationModel>
+          <Type>SUGCON2019Cortex.ProcessingEngine.Extension.ProductRecommendationModel, SUGCON2019Cortex.ProcessingEngine.Extension</Type>
+        </ProductRecommendationModel>
+        <TaskServicesFactory>
+          <Options>
+            <ProductRecommendationWorker>
+              <Type>SUGCON2019Cortex.ProcessingEngine.Extension.ProductRecommendationWorker, SUGCON2019Cortex.ProcessingEngine.Extension</Type>
+            </ProductRecommendationWorker>
+            <RecommendationFacetStorageWorker>
+              <Type>SUGCON2019Cortex.ProcessingEngine.Extension.RecommendationFacetStorageWorker, SUGCON2019Cortex.ProcessingEngine.Extension</Type>
+            </RecommendationFacetStorageWorker>
+          </Options>
+        </TaskServicesFactory>
+        <RecommendationAgent>
+          <Type>SUGCON2019Cortex.ProcessingEngine.Extension.RecommendatioinAgent, SUGCON2019Cortex.ProcessingEngine.Extension</Type>
+          <As>Sitecore.Processing.Engine.Abstractions.IAgent, Sitecore.Processing.Engine.Abstractions</As>
+          <LifeTime>Transient</LifeTime>
+          <Options>
+            <!-- The period which the agent sleeps before running again. -->
+            <SleepPeriod>1.00:00:0.000</SleepPeriod>
+          </Options>
+        </RecommendationAgent>
+      </Services>
+    </Processing>
+  </Sitecore>
+</Settings>

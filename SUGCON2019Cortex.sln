@@ -1,0 +1,49 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.29102.190
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SUGCON2019Cortex.XConnect.Extension", "SUGCON2019Cortex.XConnect.Extension\SUGCON2019Cortex.XConnect.Extension.csproj", "{185DDB2A-6513-47FE-9365-ED1F09E95C05}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SUGCON2019Cortex.XConnect.Extension.Deploy", "SUGCON2019Cortex.XConnect.Extension.Deploy\SUGCON2019Cortex.XConnect.Extension.Deploy.csproj", "{03B83A19-3216-4E3E-8B60-FBEEFCF9B467}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SUGCON2019Cortex.ProcessingEngine.Extension", "SUGCON2019Cortex.ProcessingEngine.Extension\SUGCON2019Cortex.ProcessingEngine.Extension.csproj", "{BFE64976-53AA-4AA7-8867-5CE34DDEB0C5}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SUGCON2019Cortex.Website", "SUGCON2019Cortex.Website\SUGCON2019Cortex.Website.csproj", "{54EB843A-94D6-44DF-8B36-6135246A4F01}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Doc", "Doc", "{8CC03F04-4094-4195-B97C-F19971C2702E}"
+	ProjectSection(SolutionItems) = preProject
+		README.md = README.md
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{185DDB2A-6513-47FE-9365-ED1F09E95C05}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{185DDB2A-6513-47FE-9365-ED1F09E95C05}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{185DDB2A-6513-47FE-9365-ED1F09E95C05}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{185DDB2A-6513-47FE-9365-ED1F09E95C05}.Release|Any CPU.Build.0 = Release|Any CPU
+		{03B83A19-3216-4E3E-8B60-FBEEFCF9B467}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{03B83A19-3216-4E3E-8B60-FBEEFCF9B467}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{03B83A19-3216-4E3E-8B60-FBEEFCF9B467}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{03B83A19-3216-4E3E-8B60-FBEEFCF9B467}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BFE64976-53AA-4AA7-8867-5CE34DDEB0C5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BFE64976-53AA-4AA7-8867-5CE34DDEB0C5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BFE64976-53AA-4AA7-8867-5CE34DDEB0C5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BFE64976-53AA-4AA7-8867-5CE34DDEB0C5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{54EB843A-94D6-44DF-8B36-6135246A4F01}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{54EB843A-94D6-44DF-8B36-6135246A4F01}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{54EB843A-94D6-44DF-8B36-6135246A4F01}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{54EB843A-94D6-44DF-8B36-6135246A4F01}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		EnterpriseLibraryConfigurationToolBinariesPathV6 = packages\EnterpriseLibrary.Common.6.0.1304.0\lib\NET45;packages\EnterpriseLibrary.TransientFaultHandling.6.0.1304.0\lib\portable-net45+win+wp8;packages\EnterpriseLibrary.TransientFaultHandling.Caching.6.0.1304.0\lib\NET45;packages\EnterpriseLibrary.TransientFaultHandling.Data.6.0.1304.1\lib\NET45;packages\EnterpriseLibrary.TransientFaultHandling.ServiceBus.6.0.1304.0\lib\NET45;packages\EnterpriseLibrary.TransientFaultHandling.WindowsAzure.Storage.6.0.1304.0\lib\NET45;packages\EnterpriseLibrary.TransientFaultHandling.Configuration.6.0.1304.0\lib\NET45
+		SolutionGuid = {14878275-1E29-4F31-80CD-05236CB96BB6}
+	EndGlobalSection
+EndGlobal
