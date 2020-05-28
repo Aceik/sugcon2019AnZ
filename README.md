@@ -1,4 +1,4 @@
-# SUGCON 2019 Presentation Demo - Using Sitecore Cortext #
+# Sitecore Commerce Using Sitecore Cortext - AI #
 
 The current solution is to get Cortex working with the ML model we found so far. The workflow is like below:
 
